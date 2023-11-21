@@ -9,7 +9,7 @@ public class FirstClass {
 		// TODO Auto-generated method stub
 		WebDriver driver = new ChromeDriver();
 		driver.navigate().to("https//www.google.com");
-		System.out.println("Change in Phase2");
+		System.out.println("Change by tester2");
 		
 	}
 
