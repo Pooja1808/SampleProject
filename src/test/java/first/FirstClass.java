@@ -1,5 +1,6 @@
 package first;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -15,12 +16,7 @@ public class FirstClass {
 		// TODO Auto-generated method stub
 		WebDriver driver = new ChromeDriver();
 		driver.navigate().to("https//www.google.com");
-<<<<<<< HEAD
-		//System.out.println("Change in Phase2");
-		//System.out.println("Modified n Local");
-=======
-		System.out.println("Change by tester2");
->>>>>>> refs/remotes/origin/master
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
 		WebElement scrBox = driver.findElement(By.name("q")).sendKeys("Java Tutorial");
 		Thread.sleep(2000);
